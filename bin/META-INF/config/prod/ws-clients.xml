@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--
+		=======================================================================================
+	-->
+	<!-- Cliente ContratoEnviarParaClienteSOAP -->
+	<!--
+		=======================================================================================
+	-->
+	<bean id="contratoEnviarParaClienteSOAPClient"
+		class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+		<property name="serviceInterface" value="com.altec.bsbr.app.r2.webclient.pdf.Enviar" />
+		<property name="wsdlDocumentUrl" value="http://180.128.4.220:8992/WebServices/ContratoEnviarParaCliente/ContratoEnviarParaClienteSOAP?wsdl" />
+		<property name="namespaceUri" value="http://xmlns.santander.com/WebServices/ContratoEnviarParaClienteWSDL.1/ContratoEnviarParaClienteImpl/WebServices/ContratoEnviarParaCliente" />
+		<property name="serviceName" value="ContratoEnviarParaClienteSOAP" />
+		<property name="portName" value="SOAPEventSource" />
+		<property name="lookupServiceOnStartup" value="false" />
+	</bean>
+	
+	
+	<bean id="integracaoSbService" class="org.springframework.remoting.jaxrpc.JaxRpcPortProxyFactoryBean">
+	    <property name="serviceInterface" value="localhost.axis.services.integracaosb.IntegracaosbSession"/>
+	    <property name="wsdlDocumentUrl" value="http://180.128.105.128:8080/axis/services/integracaosb?WSDL"/>
+	    <property name="namespaceUri" value="http://180.128.105.128:8080/axis/services/integracaosb"/>
+	    <property name="serviceName" value="integracaosbSessionService"/>
+	    <property name="portName" value="integracaosb"/>
+	    <property name="lookupServiceOnStartup" value="false" />
+	</bean>
+	
+	<bean id="client" class="com.altec.bsbr.app.r2.service.impl.CorretorasObterEdicaoServiceImpl">
+    	<property name="service" ref="integracaoSbService"/>
+	</bean>		
+	
+	
+
+</beans>

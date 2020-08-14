@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project myerp with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/PROJETOS/GCF_NOVO/bjbraz/web/resources/jars/bmcartuchos.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="br.com.bjbraz.screen.BatchRunner"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ jdom.jar barbecue-1.5-beta1.jar fw-1.13.6.jar commons-beanutils-1.6.jar commons-codec-1.3.jar commons-collections-3.2.1.jar commons-digester-1.8.jar commons-httpclient-3.1.jar commons-io-1.4.jar commons-lang-2.4.jar commons-logging-1.0.2.jar commons-logging-api-1.0.2.jar commons-pool-1.3.jar backport-util-concurrent.jar ehcache-1.5.0.jar jsr107cache-1.0.jar antlr-2.7.6.jar dom4j-1.6.1.jar hibernate-annotations-3.4.0.GA.jar hibernate-commons-annotations-3.1.0.GA.jar hibernate-entitymanager-3.4.0.GA.jar hibernate-validator-3.1.0.CR2.jar hibernate3-3.3.1.GA.jar javassist-3.4.GA.jar fdsapi-1.2.jar jamon-2.7.jar iText-2.1.3.jar jasperreports-3.0.1.jar jcommon-1.0.13.jar jfreechart-1.0.10.jar poi-3.0.1-FINAL-20070705.jar icu4j-3.8.jar jasypt-1.5.jar joda-time-1.6.jar jcl-over-slf4j-1.5.5.jar logback-classic-0.9.15.jar logback-core-0.9.15.jar slf4j-api-1.5.6.jar axis.jar commons-discovery-0.2.jar jaxrpc.jar MBS_Client.jar saaj.jar asm-2.2.3.jar asm-commons-2.2.3.jar asm-util-2.2.3.jar aspectjrt.jar aspectjweaver.jar cglib-nodep-2.1_3.jar jakarta-oro-2.0.8.jar spring-2.5.6.jar spring-ldap-1.2.1.jar spring-ldap-tiger-1.2.1.jar spring-modules-cache-0.9.jar spring-webmvc-2.5.6.jar ldapbp-1.0.jar alloy.jar hsqldb.jar iText-2.1.3.jar jasperreports-3.0.1.jar jboleto.jar jcommon-1.0.13.jar jdbc2_0-stdext.jar jfreechart-1.0.10.jar joda-time-1.6.jar joutlookbar.jar kunststoff.jar libs.txt liquidlnf.jar log4j.jar looks-1.1.3.jar looks-1.2.2.jar looks-win-1.1.3.jar plastic-1.1.3.jar poi-3.0.1-FINAL-20070705.jar substance.jar swing-layout.jar synthetica.jar syntheticaBlackStar.jar activation.jar ejb-api-3.0.jar jms.jar jta.jar mail.jar servlet-api.jar hsqldb.jar activation.jar ejb-api-3.0.jar jms.jar jta.jar mail.jar servlet-api.jar FastInfoset.jar http.jar jaxb-api.jar jaxb-impl.jar jaxb-xjc.jar jaxws-api.jar jsr181-api.jar jsr250-api.jar saaj-api.jar saaj-impl.jar jsr173_api.jar sjsxp.jar resolver.jar stax-ex.jar streambuffer.jar jaxws-rt.jar jaxws-tools.jar mimepull.jar ejb3-persistence.jar junit-4.4.jar wsdl4j-1.5.1.jar com.ibm.mq.jar connector.jar com.ibm.mqjms.jar dhbcore.jar mysql-connector-java-commercial-5.0.3-bin.jar ojdbc14.jar ojdbc14.jar swt-debug.jar swt.jar miglayout-3.7.3.1.zip balloontip-1.1.1.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="C:/PROJETOS/WORKSPACE/BMCOPIAS/myerp/bin"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\barbecue-1.5-beta1\lib" includes="jdom.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\barbecue-1.5-beta1" includes="barbecue-1.5-beta1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\bundle" includes="fw-1.13.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-beanutils-1.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-codec-1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-collections-3.2.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-digester-1.8.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-httpclient-3.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-io-1.4.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-lang-2.4.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-logging-1.0.2.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-logging-api-1.0.2.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\apache-commons" includes="commons-pool-1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\ehcache" includes="backport-util-concurrent.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\ehcache" includes="ehcache-1.5.0.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\ehcache" includes="jsr107cache-1.0.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="antlr-2.7.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="dom4j-1.6.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="hibernate-annotations-3.4.0.GA.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="hibernate-commons-annotations-3.1.0.GA.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="hibernate-entitymanager-3.4.0.GA.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="hibernate-validator-3.1.0.CR2.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="hibernate3-3.3.1.GA.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\hibernate" includes="javassist-3.4.GA.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jamon" includes="fdsapi-1.2.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jamon" includes="jamon-2.7.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasper" includes="iText-2.1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasper" includes="jasperreports-3.0.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasper" includes="jcommon-1.0.13.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasper" includes="jfreechart-1.0.10.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasper" includes="poi-3.0.1-FINAL-20070705.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasypt" includes="icu4j-3.8.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\jasypt" includes="jasypt-1.5.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\joda-time" includes="joda-time-1.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\logging" includes="jcl-over-slf4j-1.5.5.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\logging" includes="logback-classic-0.9.15.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\logging" includes="logback-core-0.9.15.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\logging" includes="slf4j-api-1.5.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\mbs" includes="axis.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\mbs" includes="commons-discovery-0.2.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\mbs" includes="jaxrpc.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\mbs" includes="MBS_Client.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\mbs" includes="saaj.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="asm-2.2.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="asm-commons-2.2.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="asm-util-2.2.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="aspectjrt.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="aspectjweaver.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="cglib-nodep-2.1_3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="jakarta-oro-2.0.8.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="spring-2.5.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="spring-ldap-1.2.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="spring-ldap-tiger-1.2.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="spring-modules-cache-0.9.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\spring" includes="spring-webmvc-2.5.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\compile\sun-ldap" includes="ldapbp-1.0.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="alloy.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="hsqldb.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="iText-2.1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="jasperreports-3.0.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="jboleto.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="jcommon-1.0.13.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="jdbc2_0-stdext.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="jfreechart-1.0.10.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="joda-time-1.6.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="joutlookbar.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="kunststoff.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="libs.txt"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="liquidlnf.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="log4j.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="looks-1.1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="looks-1.2.2.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="looks-win-1.1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="plastic-1.1.3.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="poi-3.0.1-FINAL-20070705.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="substance.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="swing-layout.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="synthetica.jar"/>
+            <fileset dir="C:/PROJETOS/WORKSPACE/BMCOPIAS/myerp/lib/laf"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\laf" includes="syntheticaBlackStar.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\mail" includes="activation.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\mail" includes="ejb-api-3.0.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\mail" includes="jms.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\mail" includes="jta.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\mail" includes="mail.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\mail" includes="servlet-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\hsqldb" includes="hsqldb.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\j2ee" includes="activation.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\j2ee" includes="ejb-api-3.0.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\j2ee" includes="jms.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\j2ee" includes="jta.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\j2ee" includes="mail.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\j2ee" includes="servlet-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="FastInfoset.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="http.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jaxb-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jaxb-impl.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jaxb-xjc.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jaxws-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jsr181-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jsr250-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="saaj-api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="saaj-impl.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jsr173_api.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="sjsxp.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="resolver.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="stax-ex.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="streambuffer.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jaxws-rt.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="jaxws-tools.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jaxws" includes="mimepull.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\jpa" includes="ejb3-persistence.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\junit" includes="junit-4.4.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mbs" includes="wsdl4j-1.5.1.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mq" includes="com.ibm.mq.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mq" includes="connector.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mq" includes="com.ibm.mqjms.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mq" includes="dhbcore.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mysql" includes="mysql-connector-java-commercial-5.0.3-bin.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\mysql" includes="ojdbc14.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\provided\oracle" includes="ojdbc14.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\swt" includes="swt-debug.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\swt" includes="swt.jar"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\miglayout" includes="miglayout-3.7.3.1.zip"/>
+            <zipfileset dir="C:\PROJETOS\WORKSPACE\BMCOPIAS\myerp\lib\jballoontip" includes="balloontip-1.1.1.jar"/>
+        </jar>
+    </target>
+</project>

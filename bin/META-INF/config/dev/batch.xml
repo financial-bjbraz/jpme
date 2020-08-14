@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="producer" class="br.com.bjbraz.app.prepare.ProducerApp">
+	</bean>
+
+	<bean id="consumer" class="br.com.bjbraz.app.prepare.ConsumerApp">
+	</bean>
+	
+	<bean id="batchRunner" class="br.com.bjbraz.screen.BatchRunner">
+		<property name="maxTasksRunning" value="1" />
+	</bean>
+
+	<bean id="taskManager" class="com.altec.bsbr.fw.batch.TaskManager"
+		destroy-method="stop">
+		<property name="poolSize" value="${batchRunner.poolSize}" />
+		<property name="flushFrequency" value="${batchRunner.flushFrequency}" />
+		<property name="sharedOutput" value="${batchRunner.sharedOutput}" />
+	</bean>
+
+
+</beans>

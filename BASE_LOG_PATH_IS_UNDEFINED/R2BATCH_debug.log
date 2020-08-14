@@ -1,0 +1,2 @@
+16:50:30.666 [main] INFO  br.com.bjbraz.screen.BatchRunner {} Starting BatchRunner
+16:50:31.672 [main] TRACE o.s.core.CollectionFactory {} Creating [edu.emory.mathcs.backport.java.util.concurrent.ConcurrentHashMap]
